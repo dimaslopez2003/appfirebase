@@ -8,10 +8,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
         android:layout_margin="8dp">
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profile_picture"
+            android:id="@+id/profile_Picture"
             android:layout_width="40dp"
             android:layout_height="40dp"
             tools:background="@mipmap/ic_launcher_round"/>
@@ -30,8 +29,9 @@
             tools:text="Hace 2 horas"/>
     </LinearLayout>
     <ImageView
-        android:id="@+id/post_image"
+        android:id="@+id/postimage"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
         tools:background="@mipmap/ic_launcher_round"/>
 </LinearLayout>

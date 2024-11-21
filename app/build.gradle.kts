@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -48,10 +49,14 @@ implementation ("androidx.navigation:navigation-fragment-ktx:2.8.3")
 implementation ("androidx.navigation:navigation-ui-ktx:2.8.3")
 // Utils
 implementation ("de.hdodenhof:circleimageview:3.1.0")
-implementation ("com.github.bumptech.glide:glide:4.16.0")
-implementation ("androidx.legacy:legacy-support-v4:1.0.0")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
+    implementation ("androidx.legacy:legacy-support-v4:1.0.0")
     implementation(libs.androidx.monitor)
     implementation(libs.androidx.junit.ktx)
+    implementation(libs.firebase.firestore)
+    implementation(libs.firebase.storage)
+    implementation(libs.firebase.database)
     annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0")
 // Viewmodel and livedata KTX"
 implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.6")
